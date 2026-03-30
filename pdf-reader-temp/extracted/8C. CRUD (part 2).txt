@@ -1,0 +1,202 @@
+SOURCE: C:\Users\lulu2\Downloads\8C. CRUD (part 2).pdf
+PAGES: 30
+
+COMP 1842
+Coursework CRUD system part 2
+Matt Prichard
+
+-- 1 of 30 --
+
+Recap
+Last week we finished with this folder structure and a server running on port 3000
+that restarts with nodemon each time we make a change.
+
+-- 2 of 30 --
+
+Introduction
+This week we will create a RESTful API for the Vue front end to
+consume and we will test it with Postcode.
+
+-- 3 of 30 --
+
+Install Postcode
+Search for it in the VS code extension library
+
+-- 4 of 30 --
+
+Postcode
+Once installed you should see it’s icon on the left hand panel, click the icon
+and you will see the ‘Create Request’ button. We will come back to this.
+
+-- 5 of 30 --
+
+vocabModel.js
+
+-- 6 of 30 --
+
+api/models/vocabModel.js. 	- 	full code
+
+-- 7 of 30 --
+
+vocabModel.js. 	– 	detail pt1
+This is where we will define the requirements of the data model that we intend
+to map to our database in MongoDB.
+We are using the Mongoose library as the messenger between our app and
+our database.
+The first thing to do inside of this file is require Mongoose and use the Schema
+class from the Mongoose library.
+
+-- 8 of 30 --
+
+vocabModel.js. 	– 	detail pt2
+Now we can begin to write the format for our model ‘VocabSchema’ by creating a
+new instance of the Schema class, line 5.
+Our user model will have 2 attributes: english and german.
+Each attribute will be defined using a key:value pair, with the key being the name of
+the attribute, and the value being its type, in this case ‘String’. We can also add some
+basic validation too.
+
+-- 9 of 30 --
+
+vocabModel.js. 	– 	detail pt3
+Line 16 we are specifying a name for our collection.
+The last step is to solidify this Schema as a data model with mongoose and
+export it from this file for use in other areas of our project. Notice the different
+capitalisation, this is not a mistake.
+Further reading:
+https://dev.to/halented/part-2-creating-models-for-mongodb-with-mongoose-575d
+
+-- 10 of 30 --
+
+vocabRoutes.js
+
+-- 11 of 30 --
+
+api/models/vocabRoutes.js. 	- 	full code
+
+-- 12 of 30 --
+
+Setting up routes
+• 	Routing refers to determining how an application responds to a client request for a
+specific endpoint, which is a URI (or path) and a specific HTTP request method (GET,
+POST, and so on).
+• 	Each of our routes has different route handler functions, which are executed when the
+route is matched.
+• 	Above we have defined two basic routes(‘/words’, and ‘/words/wordId’) with different
+methods
+• 	‘/words’ has to methods(‘GET’ and ‘POST’), while ‘/words/wordId’ has GET, PUT and
+DELETE.
+• 	Also we require the controller so each of the routes methods can call it’s respective
+handler function.
+
+-- 13 of 30 --
+
+We are creating the following 	endpoints:
+
+-- 14 of 30 --
+
+vocabController.js
+
+-- 15 of 30 --
+
+api/controllers/vocabController.js. 	– 	1-24
+
+-- 16 of 30 --
+
+api/controllers/vocabCotroller.js. 	– 	26 	- 	46
+
+-- 17 of 30 --
+
+Setting up the controller
+In this controller, we are writing five different functions namely:
+• 	list_all_words
+• 	create_a_word
+• 	read_a_word
+• 	update_a_word
+• 	delete_a_word
+We will export each of the functions for us to use in our routes.
+Each of these functions uses different mongoose methods such as:
+find, findById, findOneAndUpdate, save and remove.
+
+-- 18 of 30 --
+
+Setting up the controller part 2
+• 	Don’t worry too much about the detail of each function but you should be
+able to get an idea of what is going on each time.
+• 	As you can see all the responses are in the json format
+• 	At the top of the file we are requiring the mongoose library and the model
+‘Vocab’ that we made in vocabModel.js
+
+-- 19 of 30 --
+
+server.js
+
+-- 20 of 30 --
+
+Wiring it all together
+• 	Earlier on, we had a minimal code for our server to be up and running in the
+server.js file.
+• 	In this section we will be connecting our handlers(controllers), database, the
+created models, body parser and the created routes together.
+• 	Open the server.js file created a while ago and follow the following steps to
+put everything together.
+• 	Essentially, you will be replacing the code in your server.js with the code
+snippet from this section
+
+-- 21 of 30 --
+
+server/server.js. 	– 	full code
+
+-- 22 of 30 --
+
+Important 	– 	line 10
+If working with your University Mongo account use this line but change pm76
+to your username in all 3 places !!
+If working at home on your localhost use this connection string
+
+-- 23 of 30 --
+
+server.js 	differences
+Do not worry too much about the differences between the server file here and
+the one for the lab task. As I said this system is built from a book that is loosely
+based on the lab task tutorial and the author has made some additions to the
+code. Just copy it out and all should be fine.
+CORS if you are interested, it’s quite complicated
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+-- 24 of 30 --
+
+Body-parser
+https://www.simplilearn.com/tutorials/nodejs-tutorial/body-parser-in-express-js
+• 	Body Parser is a middleware of Node JS used to handle HTTP POST request.
+• 	Body Parser can parse a string based client request body into JavaScript
+Object which we can use in our application.
+• 	Specifically in the context of a POST or PUT HTTP requests where the
+information you want is contained in the body.
+• 	Using body-parser allows you to access req.body from within routes and use
+that data.
+• 	For example: To create a user in a database.
+
+-- 25 of 30 --
+
+Testing the API
+
+-- 26 of 30 --
+
+Testing the API with Postcode
+Refer to slides 54 to 64 of the main lecture today
+
+-- 27 of 30 --
+
+GET one word by ID
+
+-- 28 of 30 --
+
+Update with PUT
+
+-- 29 of 30 --
+
+?
+
+-- 30 of 30 --
+

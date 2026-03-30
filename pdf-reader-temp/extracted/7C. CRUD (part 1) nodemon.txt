@@ -1,0 +1,176 @@
+SOURCE: C:\Users\lulu2\Downloads\7C. CRUD (part 1) nodemon.pdf
+PAGES: 26
+
+COMP 1842
+Coursework CRUD system part 1
+Matt Prichard
+
+-- 1 of 26 --
+
+This is for the coursework
+These notes form the first part of the CRUD system you are
+making for your course work.
+Just getting all this working is no small achievement so go slow.
+
+-- 2 of 26 --
+
+Introduction
+This week we will create our sever folder/file structure
+Install the necessary dependencies
+Set up our basic Node server.
+Follow very carefully, if it all goes wrong you can just bin it and
+start again.
+My materials will be based on me working on Virtual Desktop
+
+-- 3 of 26 --
+
+Finished system demo
+http://localhost:8080/words/
+
+-- 4 of 26 --
+
+Based on 	sitepoint 	book
+
+-- 5 of 26 --
+
+Install 	nodemon 	globally
+Run this command from your G
+Drive
+npm 	install 	–g 	nodemon
+We can check it has installed
+nodemon 	-v
+
+-- 6 of 26 --
+
+https://www.npmjs.com/package/nodemon
+
+-- 7 of 26 --
+
+Creating the Node Back End
+This week and next week we’ll create a RESTful API for our Vue
+front end to consume and test it using 	PostCode, a VS code
+plugin for testing APIs
+We won’t want to go into too much detail on how a RESTful API
+works this week.
+
+-- 8 of 26 --
+
+Directory structure 	pt 	1
+On your G Drive create folder ’vocab-builder’
+Please follow the naming conventions and structure exactly
+Inside this folder create folder ‘server’
+
+-- 9 of 26 --
+
+Directory structure pt2
+Inside server create ‘api’
+Inside 	api 	create ’controllers’, ‘models’, ‘routes’
+
+-- 10 of 26 --
+
+Directory structure pt3
+Now open folder ‘vocab-builder’ from within VS code
+
+-- 11 of 26 --
+
+Create files
+Using the new file icon create the following 3 	js 	files in their
+corresponding folders. Be very careful with spelling and Caps
+
+-- 12 of 26 --
+
+Create files pt2
+Making sure you are now in the server folder, create 	server.js 	file
+Leaving VS code open go to the node 	js 	command prompt
+
+-- 13 of 26 --
+
+Node command prompt
+Using cd navigate to 	vocab-builder/server 	in the command
+prompt
+
+-- 14 of 26 --
+
+Node command prompt
+Once in the server directory run
+npm 	init 	-y
+npm 	init 	initialises the project and creates our 	package.json 	file
+
+-- 15 of 26 --
+
+npm 	init
+When you run the command you should see something like this, with
+the package file appearing in your VS code window
+
+-- 16 of 26 --
+
+Structure at this point
+Your folder and file structure should match this, if not go no further.
+
+-- 17 of 26 --
+
+Install the dependencies
+• 	For our API, we’ll be using the following libraries:
+• 	express —a small framework for Node that provides many useful features,
+such as routing and middleware.
+• 	cors —Express middleware that can be used to enable CORS in our project.
+• 	body-parser —Express middleware to parse the body of incoming requests.
+• 	mongoose —a MongoDB ODM (the NoSQL equivalent of an ORM) for Node. It
+provides a simple validation and query API to help you interact with your
+MongoDB database.
+
+-- 18 of 26 --
+
+Install the dependencies
+npm 	i 	express 	cors 	body-parser mongoose@6.2.4
+Making sure you are still in the server directory run this command in the node
+command prompt – notice we are specifying an exact version of mongoose
+
+-- 19 of 26 --
+
+In VS code
+You should now see a new folder called node_module that contains many
+folders including the one we just asked to install
+
+-- 20 of 26 --
+
+package.json
+Open the main package.json file in the server folder and change line8 to read
+"start": 	"nodemon 	server.js” 	now save changes
+
+-- 21 of 26 --
+
+Create the server
+Copy this code carefully into the 	server.js 	file and save
+
+-- 22 of 26 --
+
+run the server
+Go into the terminal and run npm run start. You should see a message that the
+server has started on port 3000. If you visit http://localhost:3000/, you should
+see “Hello, World!” displayed.
+
+-- 23 of 26 --
+
+nodemon 	working
+Leave the server running, go back to VS code and change the message to
+include your name, when you save the file. nodemon 	automatically restarts the
+server for you without having to run the command again. Control C to stop
+
+-- 24 of 26 --
+
+Enough for one day.
+There is a great deal that can go wrong
+getting this far, I’ve had all sorts of
+difficulties with version control and
+constantly updated dependencies etc.
+If it all goes horribly wrong just bin it all
+and start again, you won't break
+anything.
+
+-- 25 of 26 --
+
+?
+
+-- 26 of 26 --
+

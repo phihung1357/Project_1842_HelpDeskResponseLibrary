@@ -1,0 +1,967 @@
+SOURCE: C:\Users\lulu2\Downloads\COMP1842 Term 2 25_26.pdf
+PAGES: 10
+
+COMP1842 Term 2
+Module Leader:
+Matt Prichard
+Web Programming 2
+JavaScript Web
+Application
+Resit
+Contribution: 100% of
+course
+Deadline Date:
+Learning Outcomes:
+1 Develop a CRUD web application using the JavaScript based MEVN stack
+2 Discuss issues surrounding Internet and intranet technologies, such as browser
+dependency, accessibility, legal and security concerns.
+3 Critically analyse and evaluate some of the key differences between SQL and
+NoSQL databases
+1
+
+-- 1 of 10 --
+
+Part 1 – 40% weekly tasks and logbook
+Submit 5 weekly lab tasks (weeks 1,2, 3, 6 and 8). The tasks will be explained in detail in
+each of those weeks as well as the evidence that is to be submitted.
+Each set of weekly tasks is worth up to 6 marks. Making 30%
+PDF logbook showing annotated screenshots of your work 10%
+Part 2 – 60 % - IT Support CRUD system and video
+In the labs we build a simple key/value lookup CRUD system. For this coursework you must adapt
+the same system to fit a small business scenario: a Helpdesk Response Library for a company. Each
+MongoDB entry should store a Key (e.g. issue code) and a Value (the standard response text).
+Example:
+• 	Key: PWD_RESET has the value: “Ask the user to use the reset link and confirm their email
+address.”
+• 	Key: BILLING_LATE has the value: “Advise of the grace period and provide the payment
+link.”
+We will develop a basic system in the labs, and you will be shown how to evidence this for your
+video. Higher marks will be awarded for:
+Implementing the test page (a short staff training quiz based on your helpdesk entries, e.g. match
+an issue code to the correct response)
+Adding a new menu item and page.
+Adding a new field to the CRUD system, the current system has 2, add a 3rd field (e.g.
+“Category/Department”, “Priority”, or “Notes”).
+Additional functionality of your own choice beyond the above three.
+To be discussed more detail in the lectures.
+Basic mark breakdown for part 2:
+25% for adapting the code from the lecture notes to fit
+the case study
+25% for the additional features
+10% for the video (or PDF)
+Very Important! if you do not provide a video of your work or PDF
+walkthrough for part 2, it will not be marked
+Video of CRUD system.
+You are to provide a screencast video of your CRUD system. It must be no longer than 7
+mins. You can use Panopto or any screen recording software you like, as long as you can
+output an MP4 video file.
+
+-- 2 of 10 --
+
+The video will provide a walkthrough of your system in action and a talk through of the code
+you implemented. This will take the place of a written report.
+If you are really unable to make a video due to problems with remote desktop for example
+you can provide a PDF walkthrough similar to the example on Moodle. If doing this, you
+must make it very clear what you have done and annotate the walkthrough properly.
+2
+
+-- 3 of 10 --
+
+More detail given in the lectures
+Deliverables
+1. 	The zip files of the weekly tasks that have been requested (details will be given each
+week).
+2. 	A PDF logbook of the annotated screen shots of your work
+3. 	A zip file of your final ‘src’ folder from the front-end of the CRUD system.
+4. 	A 7 minute (maximum) video in MP4 format walking through the running of the
+system’s front end and back end servers, a walkthrough of the system functionality
+in the web browser and a talk through of your understanding of the code and any
+additional code you have implemented. Without this video we will not mark part 2.
+5. 	If you cannot make a video then an annotated PDF walkthrough will be acceptable
+Marking Scheme
+5 weekly tasks- possible 6 marks each 	30
+PDF logbook of the 5 weekly tasks 	10
+CRUD system 	50
+Video walkthrough ( or PDF) 	10
+Grand total 	/100
+3
+
+-- 4 of 10 --
+
+Marking Rubric for part 3
+D1
+Knowledge
+D2 Research
+Knowledge
+of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory.
+Can collect
+and
+interpret
+appropriate
+data and
+successfully
+undertake
+research
+with a
+degree of
+autonomy.
+0-29% Fail
+No evidence
+or a lack of
+understandi
+ng of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory.
+described.
+No evidence
+of collecting
+and
+interpreting
+appropriate
+source
+material.
+30-39% Fail
+Little
+evidence
+and some
+lack of
+understandi
+ng of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory.
+Poor
+evidence of
+collecting
+and
+interpreting
+appropriate
+source
+material. No
+evidence of
+undertaking
+research
+with a
+40-49%
+Satisfactory
+Basic evidence
+and some
+understanding
+of underlying
+concepts and
+principles
+associated with
+relevant theory.
+Discussions
+show some
+knowledge
+and/or
+understanding
+of theoretical
+concepts.
+Adequate
+evidence of
+collecting and
+interpreting
+appropriate
+source material.
+Undertaking
+research with a
+degree of
+autonomy.
+50-59%
+Good
+A sound
+understandi
+ng of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory.
+Good
+evidence of
+research.
+Successfully
+undertake
+research
+with a
+degree of
+autonomy.
+60-69% Very
+Good
+A clear
+understanding
+of underlying
+concepts and
+principles
+associated with
+relevant
+theory.
+Very good
+evidence of
+research.
+Successfully
+identifying
+alternatives
+and
+determining
+appropriate
+resources.
+70-79%
+Excellent
+A thorough
+understandi
+ng of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory..
+Excellent
+evidence of
+research.
+Successfully
+identifying
+suitable
+alternatives
+and
+determining
+excellent
+resources.
+80-100%
+Exceptional
+Exceptional
+knowledge
+and critical
+understandi
+ng of
+underlying
+concepts
+and
+principles
+associated
+with
+relevant
+theory.
+Outstanding
+evidence of
+research.
+Successfully
+identifying
+best
+alternatives
+and
+determining
+excellent,
+current
+resources.
+4
+
+-- 5 of 10 --
+
+degree of
+autonomy.
+D3
+Evaluation
+Able to
+reflect upon
+own
+practice
+and
+experience,
+compare
+and
+contrast
+this with
+knowledge
+and
+research,
+No evidence
+of analysis
+or critique
+of
+knowledge
+and/or
+practice
+relevant to
+the
+assignment.
+No
+engagement
+with
+relevant
+material
+beyond
+basic factual
+recall.
+Little
+evidence of
+analysis or
+critique of
+knowledge
+and/or
+practice
+relevant to
+the
+assignment.
+Minimal
+engagement
+with
+relevant
+material
+beyond
+basic factual
+recall.
+Limited evidence
+of analysis or
+critique of
+knowledge
+and/or practice
+relevant to the
+assignment.
+Adequate
+engagement
+with relevant
+material that
+goes beyond
+basic factual
+recall.
+Solid
+evidence of
+analysis or
+critique of
+knowledge
+and/or
+practice
+relevant to
+the
+assignment.
+Good
+engagement
+with
+relevant
+material
+that goes
+beyond
+basic factual
+recall.
+Strong
+evidence of
+analysis or
+critique of
+knowledge
+and/or practice
+relevant to the
+assignment.
+Deep
+engagement
+with relevant
+material.
+Excellent
+evidence of
+analysis or
+critique of
+knowledge
+and/or
+practice
+relevant to
+the
+assignment.
+Very deep
+engagemen
+t with
+relevant
+material.
+Abundant
+evidence of
+analysis or
+critique of
+knowledge
+and/or
+practice
+relevant to
+the
+assignment.
+Very in-
+depth
+engagement
+with
+relevant
+material
+that is
+approaching
+that of an
+experienced
+professional.
+5
+
+-- 6 of 10 --
+
+D4
+Communicati
+on
+Produce a
+well-
+structured
+narrative,
+written in
+coherent,
+standard
+English,
+presented
+in an
+appropriate
+academic
+style.
+Express
+ideas in an
+effective
+and
+convincing
+manner.
+No structure
+evident. The
+assessment
+includes a
+significant
+number of
+errors in
+Standard
+English. It
+lacks
+academic
+style, and
+this impedes
+flow.
+Further
+proof-
+reading
+clearly
+needed and
+additional
+support for
+academic
+writing.
+The student
+should refer
+themselves
+to student
+services for
+additional
+Little
+structure
+evident. The
+work is
+hampered
+by errors in
+Standard
+English. It
+lacks
+academic
+style and
+does not
+flow well.
+Further
+proof-
+reading
+clearly
+needed and
+additional
+support for
+academic
+writing.
+The student
+should refer
+themselves
+to student
+services for
+additional
+support in
+The structure is
+satisfactory
+overall but
+would benefit
+from further
+improvement.
+Errors appear in
+the use of
+Standard
+English, More
+careful
+proofreading
+recommended.
+The work does
+not flow well in
+several places
+and this affects
+clarity.
+A good
+structure for
+the most
+part. The
+work
+observes
+many
+academic
+conventions
+in style and
+content and
+is mostly
+presented in
+Standard
+English.
+There are
+some errors
+and
+omissions.
+Some
+sentence
+structure
+would also
+benefit
+from revisio
+n to
+improve the
+flow of the
+work in
+places.
+A very good
+structure – with
+clear
+presentation
+and
+organisation of
+ideas. The work
+observes
+almost all
+academic
+conventions in
+style, content
+and is
+presented well,
+mostly using
+Standard
+English
+throughout. M
+uch of this work
+uses a style
+which flows
+well.
+Excellent
+structure
+and very
+well
+organised
+ides. The
+written
+English is of
+a very high
+standard
+and the
+work
+observes all
+academic
+conventions
+in style and
+content.
+Excellent
+flow and
+style and a
+pleasure to
+read.
+This
+assessment
+is
+exceptionall
+y well
+structured
+and
+organised. T
+he written
+English is of
+an
+extremely
+high
+standard
+and
+observes all
+academic
+conventions
+in style and
+content. Th
+e
+assessment
+flows
+exceptionall
+y well and is
+a pleasure
+to read.
+6
+
+-- 7 of 10 --
+
+support in
+their
+writing.
+their
+writing.
+D5
+Referencing
+D6
+Employabilit
+y
+Determine
+appropriate
+resources.
+Sources
+used are
+acknowledg
+ed in the
+text and
+reference
+list using
+correct
+academic
+citation
+(Harvard
+style)
+Shows
+awareness
+of potential
+avenues of
+employmen
+t post-
+graduation,
+No evidence
+of
+determining
+appropriate
+resources.
+Sources
+used are not
+acknowledg
+ed.
+Demonstrat
+es no
+understandi
+ng of the
+digital
+entertainme
+nt sector.
+Poor
+evidence of
+determining
+appropriate
+resources.
+Most
+sources
+used are not
+acknowledg
+ed.
+Demonstrat
+es little
+understandi
+ng of the
+digital
+entertainme
+nt sector.
+Some evidence
+of determining
+appropriate
+resources. Most
+sources used are
+acknowledged.
+Demonstrates
+some
+understanding
+of the digital
+entertainment
+sector. Shows
+some knowledge
+Good
+evidence of
+determining
+appropriate
+resources.
+All sources
+used are
+acknowledg
+ed.
+Demonstrat
+es good
+understandi
+ng of the
+digital
+entertainme
+nt sector.
+Evidence of
+determining
+very good
+resources. All
+sources used
+are
+acknowledged.
+Demonstrates
+very good
+understanding
+of the digital
+entertainment
+sector. Shows
+very strong
+Evidence of
+determining
+excellent
+resources.
+All sources
+used are
+acknowledg
+ed well.
+Demonstrat
+es excellent
+understandi
+ng of the
+digital
+entertainm
+ent sector.
+Evidence of
+determining
+an extensive
+list of
+outstanding
+resources.
+All sources
+used are
+acknowledg
+ed
+appropriatel
+y.
+Demonstrat
+es
+outstanding
+understandi
+ng of the
+digital
+entertainme
+7
+
+-- 8 of 10 --
+
+understand
+s how the
+skills
+demonstrat
+ed in this
+assessment
+relate to
+their
+continuing
+personal
+developme
+nt and
+preparation
+for the
+world of
+work.
+Shows no
+knowledge
+of what
+roles there
+are and
+what skills
+are
+required.
+Cannot
+demonstrat
+e
+understandi
+ng of how
+current
+practice will
+prepare
+them for
+entering the
+workplace,
+or what is
+required of
+them to
+achieve the
+required
+level for
+employment
+.
+Shows a
+little
+knowledge
+of what
+roles there
+are and
+what skills
+are
+required.
+Surface level
+understandi
+ng of how
+current
+practice will
+prepare
+them for
+entering the
+workplace,
+or what is
+required of
+them to
+achieve the
+required
+level for
+employment
+.
+of what roles
+there are and
+what skills are
+required. Basic
+understanding
+of how current
+practice will
+prepare them
+for entering the
+workplace, or
+what is required
+of them to
+achieve the
+required level
+for employment.
+Shows good
+knowledge
+of what
+roles there
+are and
+what skills
+are
+required.
+Solid
+understandi
+ng of how
+current
+practice will
+prepare
+them for
+entering the
+workplace,
+or what is
+required of
+them to
+achieve the
+required
+level for
+employment
+.
+knowledge of
+what roles
+there are and
+what skills are
+required. Clear
+understanding
+of how current
+practice will
+prepare them
+for entering the
+workplace, or
+has a clear plan
+for how to
+achieve the
+required level
+for
+employment.
+Shows in-
+depth
+knowledge
+of what
+roles there
+are and
+what skills
+are
+required.
+Excellent
+understandi
+ng of how
+current
+practice will
+prepare
+them for
+entering the
+workplace,
+or has a
+clear and
+detailed
+plan for
+how to
+achieve the
+required
+level for
+employmen
+t.
+nt sector.
+Shows
+highly
+detailed
+knowledge
+of what
+roles there
+are and
+what skills
+are
+required.
+Deep
+understandi
+ng of how
+current
+practice will
+prepare
+them for
+entering the
+workplace,
+or has a
+clear,
+detailed and
+well-thought
+out plan for
+how to
+achieve the
+required
+level for
+8
+
+-- 9 of 10 --
+
+employment
+.
+9
+
+-- 10 of 10 --
+

@@ -1,0 +1,161 @@
+SOURCE: C:\Users\lulu2\Downloads\9C. CRUD (part 4).pdf
+PAGES: 24
+
+COMP 1842Coursework CRUD system part 4
+Add and Delete
+Matt Prichard
+
+-- 1 of 24 --
+
+Recap
+Last week we built the front and added read all, read one and
+edit functionality.
+
+-- 2 of 24 --
+
+Recap 2
+We needed 2 instances of the terminal open at once. One for the back end on port
+3000 and one for the front-end port 8080
+Back-end 	cd vocab-builder/server 	then 	npm 	run start
+Front-end 	cd vocab-builder/front-end 	then 	npm 	run serve
+
+-- 3 of 24 --
+
+This week
+• 	Use 	vue-flash-message to display info to the user
+• 	Add new words
+• 	Delete words
+
+-- 4 of 24 --
+
+Adding Flash Messages
+
+-- 5 of 24 --
+
+In place of alerts
+• 	Let’s use flash messages instead. These are nicely styled,
+configurable messages which won’t block the execution of
+JavaScript in the browser.
+• 	The first thing we’ll need to do is to tell our app to use them. To
+this end, go to 	src/helpers/helpers.js 	and make sure the top of
+the file reads like the following slide
+
+-- 6 of 24 --
+
+In place
+of alerts
+
+-- 7 of 24 --
+
+helpers.js 	- 	lines 1-19
+• 	We start by importing Vue and 	VueFlashMessages 	and some CSS
+• 	We then tell Vue to use the 	VueFlashMessages 	plugin and pass it a
+couple of options. Such as timeout in milliseconds.
+• 	Finally, we create a new instance of Vue (line 13) as we also want to
+use the flash messages from within the helper file.
+• 	You can see this happening within our 	handleError 	function in the call
+to 	vm.flash() line 18.
+
+-- 8 of 24 --
+
+App.vue- 	add line 20
+So that we can actually display the messages, add a 	FlashMessage
+component to 	src/App.vue:
+
+-- 9 of 24 --
+
+Test it
+To test out whether it’s working, try changing the value of the baseURL variable
+in src/helpers/helpers.js to something non-existent. If all has gone according to
+plan, you should see a nicely formatted error message on the right hand of the
+screen when you reload the page
+
+-- 10 of 24 --
+
+Finally…
+To make a flash message appear when a word was successfully edited, go back
+to Edit.vue and change line 28 from:
+To
+
+-- 11 of 24 --
+
+Test edit a word
+
+-- 12 of 24 --
+
+Creating a new word
+
+-- 13 of 24 --
+
+src/views/New.vue
+
+-- 14 of 24 --
+
+New.vue 	- 	full file
+Copy this code.
+This should hopefully look familiar
+as it’s quite similar to the Edit
+component. It also uses the
+WordForm child component. And,
+like the Edit component, it also
+listens for the createOrUpdate
+event. When it receives this event, it
+creates a new word with the given
+input and redirects to the newly
+created word.
+
+-- 15 of 24 --
+
+Update 	WordForm.vue
+
+-- 16 of 24 --
+
+Before we can add words, however, there are a couple of changes that need to be
+made to the WordForm component. Head back to WordForm.vue and expand
+the props object like so:
+Here, we’re initializing both values as empty strings.
+
+-- 17 of 24 --
+
+Test adding a word
+
+-- 18 of 24 --
+
+Deleting a word 	– 	last part 	J
+
+-- 19 of 24 --
+
+We won’t need a separate component to delete a word, as there’s no view involved.
+The action takes place in views/Words.vue
+Change line 19 from:
+To:19 and 20 below, this will prevent the browser’s default action, then call
+the onDestroy method.
+
+-- 20 of 24 --
+
+Next add this method to the script in Words.vue
+To make sure the user really intended to delete a word, we use a dialogue to ask
+them to confirm the delete. If the user clicks OK, a request is sent to the API to
+delete the word
+
+-- 21 of 24 --
+
+We then flash a message to let them know that the delete was successful before
+removing the word from the list of words in the data object.
+
+-- 22 of 24 --
+
+We have now completed
+the CRUD system, getting
+all this working is worth
+50% of part 2 of the CW
+spec.
+See the next set of slides
+for adding to this.
+
+-- 23 of 24 --
+
+?
+
+-- 24 of 24 --
+

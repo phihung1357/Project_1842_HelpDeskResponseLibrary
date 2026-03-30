@@ -1,0 +1,27 @@
+{
+  "name": "helpdesk-response-library-server",
+  "version": "1.0.0",
+  "description": "Back-end API for the COMP1842 helpdesk response library coursework.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:node": "node server.js",
+    "seed": "node seedSampleData.js"
+  },
+  "keywords": [
+    "comp1842",
+    "express",
+    "mongoose",
+    "crud"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "6.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
