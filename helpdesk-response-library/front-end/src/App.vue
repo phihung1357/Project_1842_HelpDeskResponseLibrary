@@ -56,7 +56,6 @@
 <script>
 import {
   getSession,
-  isAdmin,
   logoutUser,
   restoreSession,
 } from "./helpers/helpers";
@@ -70,7 +69,7 @@ export default {
   },
   computed: {
     isAdminUser() {
-      return isAdmin();
+      return !!this.session && !!this.session.user && this.session.user.role === "Admin";
     },
   },
   mounted() {
